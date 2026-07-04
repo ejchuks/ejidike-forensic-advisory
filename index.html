@@ -3,229 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chukwuemeka Ejidike & Co. | Chartered Accountants & Forensic Advisory</title>
+    <title>Chukwuemeka Ejidike & Co. | Chartered Accountants</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style> body { font-family: 'Inter', sans-serif; } </style>
+    <style> 
+        body { font-family: 'Inter', sans-serif; } 
+        /* Dropdown CSS for smooth hover */
+        .dropdown:hover .dropdown-menu { display: block; }
+    </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-100 selection:text-slate-900">
 
     <header class="border-b border-slate-200 bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-sm">
-        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div>
-                <span class="font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 block">CHUKWUEMEKA EJIDIKE & CO.</span>
+                <a href="index.html" class="font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 block hover:text-emerald-700 transition">CHUKWUEMEKA EJIDIKE & CO.</a>
                 <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 block">Chartered Accountants</span>
             </div>
             
-            <nav class="hidden md:flex items-center space-x-8 font-semibold text-sm text-slate-600">
-                <a href="#about" class="hover:text-emerald-700 transition">About Us</a>
-                <a href="#services" class="hover:text-emerald-700 transition">Services</a>
-                <a href="#contact" class="hover:text-emerald-700 transition">Contact</a>
+            <nav class="hidden lg:flex items-center space-x-8 font-semibold text-sm text-slate-600">
+                <a href="index.html" class="text-emerald-700 transition border-b-2 border-emerald-700 pb-1">Home</a>
+                
+                <div class="relative dropdown py-6">
+                    <button class="hover:text-emerald-700 transition flex items-center gap-1 focus:outline-none">
+                        Our Services
+                        <svg class="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="dropdown-menu absolute top-[70px] left-0 w-64 bg-white border border-slate-200 shadow-xl rounded-lg hidden overflow-hidden z-50">
+                        <a href="executive-forensics.html" class="block px-5 py-3 text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 border-b border-slate-100">Executive Forensics Desk</a>
+                        <a href="faas-overview.html" class="block px-5 py-3 text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 border-b border-slate-100">Finance as a Service (FaaS)</a>
+                        <a href="statutory-audits.html" class="block px-5 py-3 text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 border-b border-slate-100">Statutory Audits</a>
+                        <a href="tax-consultancy-nigeria.html" class="block px-5 py-3 text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 border-b border-slate-100">Corporate Tax Consultancy</a>
+                        <a href="bank-statement-forensics.html" class="block px-5 py-3 text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 border-b border-slate-100">Bank Ledger Forensics</a>
+                        <a href="pos-terminal-forensics.html" class="block px-5 py-3 text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">POS Settlement Audits</a>
+                    </div>
+                </div>
+
+                <a href="client-login.html" class="hover:text-emerald-700 transition">Client Portal</a>
             </nav>
 
-            <div class="flex items-center space-x-2 border border-emerald-200 bg-emerald-50 px-3 py-1.5 rounded text-xs sm:text-sm font-bold text-emerald-800">
-                <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
-                <span class="hidden sm:inline">Licensed ICAN Practice</span>
-                <span class="sm:hidden">ICAN Licensed</span>
+            <div class="flex items-center space-x-4">
+                <a href="engagement.html" class="hidden sm:inline-block bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-md transition shadow-sm">
+                    Engage Firm
+                </a>
             </div>
         </div>
     </header>
 
-    <section class="bg-gradient-to-b from-slate-100 via-white to-slate-50 text-slate-900 py-20 px-6 lg:py-28 border-b border-slate-200">
-        <div class="max-w-4xl mx-auto text-center">
-            <div class="inline-block bg-slate-900 text-white px-4 py-1.5 rounded-full text-sm sm:text-base font-bold tracking-wide mb-6 shadow-sm">
-                Historical Ledger Forensics & Fractional CFO
-            </div>
-
-            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-950 leading-[1.2]">
-                <span class="block">Stop Payment Gateway Skimming.</span>
-                <span class="block mt-2 text-emerald-700 underline decoration-emerald-400 decoration-4 underline-offset-4">Recover Leaked Capital.</span>
+    <section class="bg-slate-900 text-white py-24 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6">
+                Institutional-Grade <br><span class="text-emerald-400">Financial Architecture</span>
             </h1>
-            
-            <p class="mt-6 text-lg sm:text-xl text-slate-700 max-w-2xl mx-auto leading-relaxed font-normal">
-                We provide independent financial oversight for scaling US, UK, and European brands. We bridge the gap between your engineering team's database and your finance team's ledger to catch the leakage automated software ignores.
+            <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-10">
+                We design bulletproof internal controls, execute forensic oversight, and deliver independent assurance for growing enterprises across Nigeria.
             </p>
-            
-            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#contact" class="w-full sm:w-auto bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-8 py-4 rounded-lg transition duration-200 shadow-lg shadow-emerald-700/20 text-base uppercase tracking-wider text-center">
-                    Request a Leakage Audit
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="engagement.html" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-lg transition duration-200 shadow-lg uppercase tracking-wider w-full sm:w-auto">
+                    Initiate Engagement
                 </a>
-                <a href="#services" class="w-full sm:w-auto bg-white border border-slate-300 hover:bg-slate-50 text-slate-800 font-bold px-8 py-4 rounded-lg transition duration-200 text-base text-center">
-                    View Methodology
+                <a href="faas-overview.html" class="bg-transparent border-2 border-slate-500 hover:border-slate-300 text-white font-bold px-8 py-4 rounded-lg transition duration-200 uppercase tracking-wider w-full sm:w-auto">
+                    Explore FaaS Solutions
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-20 px-6 max-w-4xl mx-auto scroll-mt-24">
-        <span class="text-sm font-extrabold uppercase tracking-widest text-emerald-700">About Our Practice</span>
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-2 tracking-tight">Automation checks the maths, but we at Chukwuemeka Ejidike & Co check the intent.</h2>
-        <div class="mt-6 space-y-4 text-slate-700 text-lg leading-relaxed">
-            <p>
-                Modern scaling businesses rely on counterparties (Stripe, PayPal, Square) and automated cloud ledgers. But software operates on rigid syntax—it cannot flag unreturned chargeback holds, phantom platform fee spikes, or behavioral internal theft.
-            </p>
-            <p>
-                When your software says your accounts balance, but your corporate bank account feels inexplicably light, <strong class="text-slate-950 font-bold bg-amber-100 px-1">you do not need a standard bookkeeper. You need a forensic advocate.</strong>
-            </p>
-        </div>
-    </section>
-
-    <section id="services" class="bg-slate-100 py-20 px-6 border-y border-slate-300 scroll-mt-20">
-        <div class="max-w-5xl mx-auto">
-            <div class="max-w-3xl">
-                <span class="text-sm font-extrabold uppercase tracking-widest text-emerald-700">Our Services & Model</span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-2">The Zero-Asymmetry Recovery Protocol</h2>
-                <p class="text-slate-600 text-base sm:text-lg mt-2 font-medium">We eliminate the risk of advisory engagements by tying our backend compensation strictly to realized cash.</p>
+    <section class="py-24 px-6 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Practice Service Lines</h2>
+                <p class="text-slate-600 mt-4 max-w-2xl mx-auto">Comprehensive financial oversight divided into three specialized practice areas.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8 mt-12">
-                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
-                    <span class="text-emerald-700 font-extrabold text-sm block mb-2">PHASE I</span>
-                    <h3 class="font-bold text-slate-900 text-xl">Ledger Reconstruction</h3>
-                    <p class="text-slate-600 text-base mt-3 leading-normal">An exhaustive forensic scrub of your last 12–24 months of processor settlements, gateway clearing accounts, and PostgreSQL/database order feeds.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-lg flex items-center justify-center text-xl mb-6 border border-emerald-100">
+                        📊
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Assurance & Compliance</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Strict, independent evaluations of financial statements and corporate tax structuring to ensure regulatory safety.</p>
+                    <a href="statutory-audits.html" class="text-emerald-700 font-semibold text-sm hover:underline">View Audits & Tax &rarr;</a>
                 </div>
-                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
-                    <span class="text-emerald-700 font-extrabold text-sm block mb-2">PHASE II</span>
-                    <h3 class="font-bold text-slate-900 text-xl">Dispute Packaging</h3>
-                    <p class="text-slate-600 text-base mt-3 leading-normal">Compilation of a formally evidenced, statutorily backed <em>Forensic Query Packet</em> utilized to force legal reversals from financial counterparties.</p>
+
+                <div class="bg-white p-8 rounded-2xl border-2 border-emerald-600 shadow-md relative">
+                    <div class="absolute top-0 right-0 bg-emerald-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-widest">Core Service</div>
+                    <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-lg flex items-center justify-center text-xl mb-6 border border-emerald-100">
+                        💻
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Cloud FaaS & Control</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Proprietary remote monitoring of your inventory, ledgers, and cash flow to eliminate internal control deficits.</p>
+                    <a href="faas-overview.html" class="text-emerald-700 font-semibold text-sm hover:underline">Explore FaaS Architecture &rarr;</a>
                 </div>
-                <div class="bg-white p-8 rounded-xl border-2 border-emerald-600 shadow-md relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-emerald-700 text-white text-[10px] font-bold px-3 py-1 rounded-bl uppercase tracking-widest">Core</div>
-                    <span class="text-emerald-700 font-extrabold text-sm block mb-2">PHASE III</span>
-                    <h3 class="font-bold text-slate-900 text-xl">Contingency Settlement</h3>
-                    <p class="text-slate-600 text-base mt-3 leading-normal">Low-friction Discovery Retainer. The remainder of our fee is strictly <strong>15% of the cash recovered</strong> into your bank feed. $0 recovered = $0 owed.</p>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-lg flex items-center justify-center text-xl mb-6 border border-emerald-100">
+                        🔍
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Financial Forensics</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Deep-dive algorithmic reconstruction of bank statements and POS terminal settlements to uncover systemic leakage.</p>
+                    <a href="executive-forensics.html" class="text-emerald-700 font-semibold text-sm hover:underline">View Forensic Advisory &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 px-6 max-w-4xl mx-auto">
-        <div class="bg-slate-900 text-white p-8 sm:p-10 rounded-2xl shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <div class="max-w-xl">
-                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Statutory Posture. Global Execution.</h2>
-                <p class="text-slate-300 text-base mt-2 leading-relaxed">
-                    Chukwuemeka Ejidike & Co. is a practicing statutory firm bound by the Professional Code of Conduct of the <strong class="text-white underline decoration-emerald-500">Institute of Chartered Accountants of Nigeria (ICAN)</strong> and the IFAC.
-                </p>
+    <footer class="bg-white py-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-slate-600">
+            <div>
+                <strong class="text-slate-900 font-extrabold tracking-tight text-base mb-1 block">CHUKWUEMEKA EJIDIKE & CO.</strong>
+                <p class="mb-3">Chartered Accountants & Forensic Advisory</p>
+                <span class="inline-block border border-emerald-200 bg-emerald-50 text-emerald-800 text-xs font-bold px-2 py-1 rounded">Licensed ICAN Practice</span>
             </div>
-            <div class="border-t md:border-t-0 md:border-l border-slate-700 pt-4 md:pt-0 md:pl-6 text-sm font-semibold space-y-2 text-emerald-400 shrink-0">
-                <div>✓ API & Read-Only Access</div>
-                <div>✓ SQL Data Lineage Auditing</div>
-                <div>✓ US / UK / EU Aligned Hours</div>
+            <div>
+                <strong class="text-slate-900 font-bold mb-3 block uppercase tracking-wider text-xs">Direct Contact</strong>
+                <p class="mb-2"><span class="mr-2">📍</span> Suite [X], [Building Name], [Street], [City / State], Nigeria.</p>
+                <p class="mb-2"><span class="mr-2">📞</span> +234 [XXXXXXXXXX]</p>
+                <p><span class="mr-2">✉️</span> info@ejidikeandco.com</p>
+            </div>
+            <div>
+                <strong class="text-slate-900 font-bold mb-3 block uppercase tracking-wider text-xs">Statutory Registrations</strong>
+                <p class="mb-2">Registered with the <strong>Corporate Affairs Commission (CAC)</strong>.</p>
+                <p class="mb-3">Regulated by the <strong>Institute of Chartered Accountants of Nigeria (ICAN)</strong>.</p>
+                <p class="text-xs text-emerald-700 font-semibold italic bg-emerald-50 inline-block px-2 py-1 rounded border border-emerald-100">Status verifiable via official institutional portals.</p>
+                <p class="text-xs text-slate-400 pt-4 border-t border-slate-100 mt-4">© 2026 Chukwuemeka Ejidike & Co. All rights reserved.</p>
             </div>
         </div>
-    </section>
-
-    <section id="contact" class="bg-slate-950 text-white py-24 px-6 scroll-mt-10 border-t border-slate-900">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-            
-            <div class="lg:col-span-5 space-y-8">
-                <div>
-                    <span class="text-xs font-bold uppercase tracking-widest text-emerald-500 block mb-2">Institutional Verification</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Direct Access & Statutory Records</h2>
-                    <p class="text-slate-400 text-base mt-3 leading-relaxed">
-                        We operate with complete corporate transparency. Due to the sensitive nature of financial forensics, we encourage prospective clients to verify our statutory standing prior to engagement.
-                    </p>
-                </div>
-
-                <div class="space-y-6 border-t border-slate-800 pt-8 text-sm">
-                    <div class="flex items-start space-x-4">
-                        <div class="text-emerald-500 font-bold text-lg mt-0.5">📍</div>
-                        <div>
-                            <strong class="block text-white font-semibold">Physical Practice Address</strong>
-                            <span class="text-slate-400 mt-1 block leading-relaxed">28, Oroigwe Road,<br>Off Tony Estate Junction, Port Harcourt, Rivers State, Nigeria.</span>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start space-x-4">
-                        <div class="text-emerald-500 font-bold text-lg mt-0.5">🏛️</div>
-                        <div>
-                            <strong class="block text-white font-semibold">Statutory Registrations</strong>
-                            <span class="text-slate-400 mt-1 block leading-relaxed">
-                                Corporate Affairs Commission (CAC) Reg: <span class="text-white font-mono">[BN / RC Number]</span><br>
-                                ICAN Practice Licence <span class="text-white font-mono">[Insert Number]</span>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start space-x-4">
-                        <div class="text-emerald-500 font-bold text-lg mt-0.5">📞</div>
-                        <div>
-                            <strong class="block text-white font-semibold">Direct Communication</strong>
-                            <span class="text-slate-400 mt-1 block leading-relaxed">
-                                Direct / WhatsApp: <span class="text-white font-mono">+234 7084549761</span><br>
-                                Secure Email: <span class="text-white font-mono">admin@ejidikeandco.com</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-slate-900 border border-slate-800 p-4 rounded-xl text-xs text-slate-400 flex items-center space-x-3">
-                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0"></span>
-                    <span>Operating aligned to Western business hours (WAT / UTC+1).</span>
-                </div>
-            </div>
-
-            <div class="lg:col-span-7 bg-white text-slate-900 border border-slate-200 p-8 sm:p-12 rounded-2xl shadow-2xl">
-                <h3 class="text-2xl font-extrabold tracking-tight text-slate-950">Confidential Audit Request</h3>
-                <p class="text-slate-600 mt-1 text-sm font-medium">Submit your operational parameters. No automated billing triggered.</p>
-
-                <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="mt-8 space-y-5 text-base">
-                    <div>
-                        <label class="block text-slate-800 text-xs font-bold uppercase tracking-wider mb-1.5">Your Full Name</label>
-                        <input type="text" name="Client Name" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent font-medium">
-                    </div>
-                    <div>
-                        <label class="block text-slate-800 text-xs font-bold uppercase tracking-wider mb-1.5">Company Name & Website</label>
-                        <input type="text" name="Company" required placeholder="e.g. Acme Corp (acme.com)" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent font-medium">
-                    </div>
-                    <div>
-                        <label class="block text-slate-800 text-xs font-bold uppercase tracking-wider mb-1.5">Work Email Address</label>
-                        <input type="email" name="Email" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent font-medium">
-                    </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-slate-800 text-xs font-bold uppercase tracking-wider mb-1.5">Primary Ledger</label>
-                            <select name="Software" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-3 text-slate-900 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent font-medium">
-                                <option>QuickBooks Online</option>
-                                <option>Xero</option>
-                                <option>NetSuite / Custom SQL</option>
-                                <option>Other / Unsure</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-slate-800 text-xs font-bold uppercase tracking-wider mb-1.5">Primary Gateway</label>
-                            <select name="Gateway" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-3 text-slate-900 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent font-medium">
-                                <option>Stripe</option>
-                                <option>PayPal</option>
-                                <option>Shopify Payments</option>
-                                <option>Bank Transfers Only</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div>
-                        <label class="block text-slate-800 text-xs font-bold uppercase tracking-wider mb-1.5">Monthly Transaction Volume</label>
-                        <select name="Volume" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-3 text-slate-900 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent font-medium">
-                            <option>$50,000 - $100,000 / mo</option>
-                            <option>$100,000 - $250,000 / mo</option>
-                            <option>$250,000+ / mo</option>
-                            <option>Under $50,000</option>
-                        </select>
-                    </div>
-
-                    <button type="submit" class="w-full mt-6 bg-emerald-700 hover:bg-emerald-800 text-white font-extrabold py-4 rounded-lg uppercase tracking-wider text-sm transition shadow-xl shadow-emerald-700/20">
-                        Submit For Review
-                    </button>
-                </form>
-            </div>
-
-        </div>
-    </section>
-
-    <footer class="bg-black text-slate-500 text-xs py-8 px-6 text-center border-t border-slate-900">
-        <p>© 2026 Chukwuemeka Ejidike & Co. Chartered Accountants. All rights reserved.</p>
-        <p class="mt-1 text-slate-600">Statutory practice registered in the Federal Republic of Nigeria. Regulated by ICAN.</p>
     </footer>
 
 </body>
